@@ -1,0 +1,5 @@
+keymap \\\r	COMMAND "READ_SHELL 'readable $W3M_URL -p html-title,html-content > /tmp/readable.html' ; LOAD /tmp/readable.html"
+
+keymap ,c EXTERN_LINK '(echo -n %s) | xsel -b'
+
+keymap ,i EXTERN_LINK 'feh -. -x -B black -g 900x600-15+60 %s &'
